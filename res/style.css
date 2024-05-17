@@ -1,0 +1,310 @@
+/* Body and general styles */
+body {
+	font-family: Verdana;
+	padding: 0px;
+	margin: 0px;
+	max-width: 1500px;
+	margin-left: auto;
+	margin-right: auto;
+	background: rgb(255,255,255);
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(247,181,69,0.4724090319721639) 50%, rgba(255,255,255,1) 100%);
+}
+
+	/* Headers */
+	h1, h2 {
+		color: #3773B5;
+	}
+	
+	h1 {
+		font-size: 2.3em;
+		line-height: 1.1em;
+		margin-bottom: 0px;
+	}
+	
+	h2 {
+		font-size: 2.2em;
+		margin-top: 40px;
+	}
+	
+	header, article {
+		border-left: 1px solid #bbbbbb;
+		border-right: 1px solid #bbbbbb;
+	}
+
+	/* Header */
+	header {
+		display: grid;
+		grid-template-columns: auto auto;
+		background-color: #3773B5;
+		color: white;
+		height: 140px;
+		border-bottom: 1px solid #629CE0;
+	}
+	
+		/* Person */
+		header section.person {
+			margin-left: 40px;
+			line-height: 0.7em;
+			margin-top: 20px;
+			font-size: 1.0em;
+		}
+		
+			header section.person p.name {
+				font-size: 1.3em;
+			}
+			
+			header section.person p.mail a:visited, header section.person p.mail a {
+				color:white;
+				text-decoration: none;
+			}
+			
+			header section.person p.mail:before {
+				content: '✉ ';
+			}
+			
+			header section.person p.phone:before {
+				content: '☏ ';
+			}
+
+		/* Navigation */
+		header nav {
+			padding-top: 40px;
+			padding-right: 50px;
+			text-align: right;
+		}
+		
+			header nav a, header nav a:visited {
+				color:white;
+				text-decoration: none;
+			}
+			
+			header nav a:hover {
+				font-weight: bold;
+				text-decoration: underline;
+				color: white;
+			}
+				
+			header nav a {
+				margin-left: 40px;
+				font-size: 1.2em;
+				color: #dddddd;
+			}
+	
+	/* Main article */
+	article {
+		background-color: white;
+		clear: both;
+		padding-left: 40px;
+		padding-right: 20px;
+	}
+		
+		/* About me */
+		article section#aboutme {
+			display: grid;
+			grid-template-columns: 30% 70%;
+		}
+		
+			article section#aboutme div.text {
+				font-size: 1.3em;
+				color: #777777;
+			}
+			
+			article section#aboutme div.photo {
+				margin-top: 30px;
+			}
+			
+			article section#aboutme div.photo img {
+				width: 80%;
+			}
+		
+		/* Skills */
+		article section#skills {
+			display: flow-root;
+		}
+		
+			article section#skills section {
+				text-align: center;
+				background-color: #f9f9f9;
+				border: 2px solid #cccccc;
+				margin-left: 20px;
+				margin-right: 20px;
+				margin-bottom: 40px;
+				padding: 10px;
+				float: left;
+				border-radius: 15px;
+				width: 170px;
+				line-height: 0.7em;
+				font-size: 0.9em;
+			}
+			
+			article section#skills section:hover {
+				background-color: #eeeeee;
+				border: 2px solid #aaaaaa;
+				cursor: pointer;
+			}
+		
+		/* Projects */
+		article section#projects section.project {
+			margin-left: 50px;
+		}
+		
+			article section#projects section.project h3 {
+				color: #666666;
+			}
+			
+			article section#projects section.project hr {
+				margin-top: 20px;
+				margin-bottom: 20px;
+				margin-left: 10%;
+				width: 70%;
+				border: 1px solid #cccccc;
+			}
+			
+			article section#projects section.project li {
+				margin-left: 50px;
+				margin-right: 50px;
+				padding-left: 10px;
+			}
+		
+		/* Recommendations */
+		article section#recommendations div.list {
+			display: flow-root;
+		}
+		
+			article section#recommendations div.list section {
+				text-align: center;
+				background-color: #ffffff;
+				border: 2px solid #cccccc;
+				margin-left: 20px;
+				margin-right: 20px;
+				margin-bottom: 40px;
+				padding: 5px;
+				float: left;
+				width: 200px;
+				height: 100px;
+				overflow: hidden;
+				border-radius: 15px;
+				font-style: italic;
+				font-size: 0.85em;
+				vertical-align: middle;
+			}
+			
+				article section#recommendations div.list section:hover {
+					background-color: #eeeeee;
+					border: 2px solid #aaaaaa;
+					cursor: pointer;
+					font-style: normal;
+				}
+				
+				article section#recommendations div.list section::before {
+					content: '"';
+				}
+				article section#recommendations div.list section::after {
+					content: '"';
+				}
+			
+			/* Form */
+			article section#recommendations div.form {
+				margin-left: auto;
+				margin-right: auto;
+				width: 50%;
+				text-align: center;
+				padding-bottom: 100px;
+			}			
+		
+				div.form h3 {
+					color: #666666;
+				}
+		
+				article section#recommendations div.form input[type="text"]
+					, article section#recommendations div.form textarea 
+				{
+					font-family: Verdana;
+					font-size: 14px;
+					width: 100%;
+				}	
+				
+				article section#recommendations div.form textarea {
+					height: 125px;
+				    background-image: url("images/background_cat.png");
+				    background-position: right bottom;
+				    background-repeat: no-repeat;
+				}
+				
+				article section#recommendations div.form div.submit {
+					padding: 10px;
+					padding-left: 40px;
+					padding-right: 40px;
+					color: #3773B5;
+					font-size: 1.3em;
+					width: 20%;
+					margin-left: auto;
+					margin-right: auto;
+					
+					border: 2px solid #3773B5;
+					border-radius: 10px;
+					background-color: white;
+					cursor: pointer;
+				}
+					article section#recommendations div.form div.submit:hover {
+						background-color: #eeeeee;
+					}
+				
+	/* Popup */
+	div.popup {
+		width:400px;
+		background-color: #ffe1cb;
+		border-radius: 3mm;
+		top: 50%;
+		left:50%;
+		transform: translate(-50%,-50%);
+		text-align: center;
+		position: fixed;
+		visibility: hidden;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+		div.popup img {
+			padding-top: 20px;
+		}
+
+		div.popup button {
+			background-color: #fff;
+			border: 1px solid #ff8a33;
+			color: #ff8a33;
+			display: block;
+			border-radius: 6px;
+			text-align: center;
+			margin: 50px;
+			padding: 10px;
+			width: 2in;
+			font-size: 20px;
+			margin-left: 25%;
+		}
+
+		div.popup button:hover {
+			background-color: #fff;
+			border: 2px solid #ffab6d;
+			color: #ffab6d;
+			display: block;
+			font-weight: bolder;
+			text-align: center;
+			cursor: pointer;
+			margin-left: 25%;
+		}
+
+	/* To top button */
+	div.iconbutton{
+		width: 48px;
+		height: 48px;
+		border-radius: 100%;
+		background-color: #3773B5;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: fixed;
+		right: 3%;
+		bottom: 3%;
+		cursor: pointer;
+	}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="res/style.css">
+		<title>Code Whiskers the cat</title>
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+		<script src="res/script.js"></script>
+	</head>
+	<body>
+		<header>
+			<section class="person">
+				<p class="name">Code Whiskers</p>
+				<p class="mail"><a href="mailto:cw3000@catcentral.com">cw3000@catcentral.com</a></p>
+				<p class="phone">+49 228 729 729</p>
+			</section>
+			<nav>
+				<a href="#aboutme">About Me</a>
+				<a href="#skills">Skills</a>
+				<a href="#projects">Projects</a>
+				<a href="#recommendations">Recommendations</a>
+			</nav>
+		</header>
+		<article>
+			<section id="aboutme">
+				<div class="photo">
+					<img src="images/profile.jpg" />
+				</div>
+				<div class="text">
+					<h1>Hi, I'm Code Whiskers 🐱</h1>
+					<p>I'm the tabby with a talent for tackling tough tech troubles. During the sunlight hours, I gracefully navigate through nests of code, effortlessly eradicating errors with my keen feline instincts.</p>
+					<p>As night envelops the sky, I nestle among the keys, visions of binary dancing in my head, while concocting revolutionary software that's bound to cause a purr in the digital domain.</p>
+				</div>
+			</section>
+			<section id="skills">
+				<h2>Skills</h2>
+				<section class="skill">
+					<img src="images/skills_htmlc.png" />
+					<h5>HTML-C</h5>
+					<p>2 years experience</p>
+				</section>
+				<section class="skill">
+					<img src="images/skills_felinejava.png" />
+					<h5>FelineJava</h5>
+					<p>1,5 years experience</p>
+				</section>
+				<section class="skill">
+					<img src="images/skills_catscript.png" />
+					<h5>CatScript</h5>
+					<p>10 years experience</p>
+				</section>
+				<section class="skill">
+					<img src="images/skills_recat.png" />
+					<h5>Recat</h5>
+					<p>1 year experience</p>
+				</section>
+				<section class="skill">
+					<img src="images/skills_node.png" />
+					<h5>Node.purr</h5>
+					<p>1 year experience</p>
+				</section>
+				<section class="skill">
+					<img src="images/skills_catss.png" />
+					<h5>CatSS</h5>
+					<p>2 years experience</p>
+				</section>
+				<section class="skill">
+					<img src="images/skills_purrthon.png" />
+					<h5>Purrthon</h5>
+					<p>3 years experience</p>
+				</section>
+			</section>
+			<section id="projects">
+				<h2>Projects</h2>
+				<section class="project">
+					<h3>Purrfect Privacy</h3>
+					<li>Code Whiskers developed 'Purrfect Privacy', a sleek and secure messaging app that uses complex whisker-based encryption to keep communications confidential.</li>
+					<hr />
+				</section>
+				<section class="project">
+					<h3>MouseTracker 3000</h3>
+					<li>With 'MouseTracker 3000', Code Whiskers revolutionized the pest control industry. This AI-driven app predicts mouse movements with uncanny accuracy, ensuring a successful hunt every time.</li>
+					<hr />
+				</section>
+				<section class="project">
+					<h3>CatNap++</h3>
+					<li>'CatNap++' is a revolutionary app that optimizes nap schedules for maximum energy. Code Whiskers created it to help busy felines find the perfect balance between work and relaxation.</li>
+					<hr />
+				</section>
+				<section class="project">
+					<h3>Whisker Widgets</h3>
+					<li>'Whisker Widgets' is a collection of innovative tools and gadgets created by Code Whiskers to streamline the daily tasks of tech-savvy cats. From automated yarn ball dispensers to laser pointer schedulers, it's the ultimate productivity suite for the modern cat.</li>
+					<hr />
+				</section>
+				<section class="project">
+					<h3>Feline Firewall</h3>
+					<li>This project introduced 'Feline Firewall', a robust security system designed by Code Whiskers to protect feline data across the web. It's renowned for its impenetrable security measures and sleek, cat-friendly interface.</li>
+					<hr />
+				</section>
+			</section>
+			<section id="recommendations">
+				<h2>Recommendations</h2>
+				<div class="list" id ="reclist">
+					<section>
+						Working with Code Whiskers was a game-changer; his innovative approach to coding made our project a resounding success 
+					</section>
+					<section>
+						Code Whiskers ability to debug complex code is simply unmatched; cats are the secret weapon of any development team.
+					</section>
+					<section>
+						The creativity and efficiency of Code Whiskers have consistently impressed us, delivering exceptional results every time.
+					</section>
+					<section>
+						Code Whiskers is the epitome of tech genius; his contributions have propelled our company to the forefront of the industry
+					</section>
+					<section>
+						Code Whiskers' flair for intuitive UI design and user experience is simply purr-fect; he truly understands what users want.
+					</section>
+					<section>
+						The dedication and technical prowess of Code Whiskers have made him an indispensable part of our coding community.
+					</section>
+				</div>
+				<div class="form">
+					<h3>Leave a Recommendation</h3>
+					<form>
+						<p>
+							<input type="text" name="name" placeholder="Name (Optional)">
+						</p>
+						<p>
+							<textarea id="message" name="message" placeholder="Message" style="background-image: url('images/background_cat.png');
+				    background-position: right bottom; background-repeat: no-repeat;"></textarea>
+						</p>
+						<div class="submit" onclick="addRecommendation();">😽 Submit</div>
+					</form>
+				</div>
+			</section>
+		</article>
+		
+		<div class="popup" id="popup" class="flex_center">
+			<h1>😻</h1>
+			<h3>Thank mew for your pawsitive feedback!</h3>
+			<p>Your glowing recommendation adds another bright whisker to Code Whiskers' cap of coding accomplishments.</p>
+			<button onclick="showPopup(false)">Ok</button>
+		</div>
+		<div class="iconbutton" onclick="window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })">
+			<img src="images/arrowup.png" />
+		</div>
+	</body>
+</html>
